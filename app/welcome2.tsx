@@ -200,7 +200,7 @@ export default function WelcomeScreen2() {
     <View style={styles.container}>
       <View style={styles.bgLayer}>
         <Image
-          source={require('@/assets/images/bg-welcome.png')}
+          source={require('@/assets/images/bg_welcome.png')}
           style={styles.bgImage}
           contentFit="cover"
         />
