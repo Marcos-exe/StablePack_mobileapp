@@ -451,7 +451,7 @@ export default function LoginScreen() {
     <View style={styles.container}>
       <View style={styles.bgLayer}>
         <Image
-          source={require('@/assets/images/bg-login.png')}
+          source={require('@/assets/images/bg_login.png')}
           style={styles.bgImage}
           contentFit="cover"
         />
