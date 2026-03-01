@@ -19,7 +19,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.solvex.stablepack"
     },
     "web": {
       "output": "static",
@@ -30,19 +31,32 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
+          "image": "./assets/images/splash-background.png",
+          "resizeMode": "cover",
+          "backgroundColor": "#000000",
           "dark": {
             "backgroundColor": "#000000"
           }
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Permitir que o $(PRODUCT_NAME) aceda à sua câmara",
+          "microphonePermission": "Permitir que o $(PRODUCT_NAME) grave áudio",
+          "recordAudioAndroid": true
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "8f9f8777-e9f1-4c79-8d5d-02432c021a8b"
+      }
     }
   }
 }

@@ -1,0 +1,5 @@
+# Evitar problemas de permissões no EAS Build (ex.: em pastas OneDrive)
+.vscode/
+
+# Pasta de referência/outro projeto - não faz parte da app StablePack
+Camera/
