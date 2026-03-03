@@ -1,3 +1,27 @@
+/**
+ * ============================================================================
+ * LOGIN SCREEN
+ * ============================================================================
+ * 
+ * This screen allows existing users to log in to the application.
+ * 
+ * Features:
+ * - Role selection: Restaurant, Client, or Deliver
+ * - Email and password login
+ * - Social login (Google, Facebook, Apple)
+ * - Navigation to registration and password recovery
+ * - Field validation and error handling
+ * - Smooth animations with React Native Reanimated
+ * 
+ * Flow:
+ * 1. User selects their role
+ * 2. Fills in email and password
+ * 3. Clicks "Login" or uses social login
+ * 4. App sends credentials to backend API
+ * 5. If successful, navigates to dashboard
+ * 6. If error occurs, displays appropriate message
+ */
+
 import { Image } from 'expo-image';
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
@@ -28,26 +52,73 @@ import FacebookIcon from '@/assets/icons/Facebook.svg';
 import GoogleIcon from '@/assets/icons/Google.svg';
 import TwitterIcon from '@/assets/icons/Twitter.svg';
 
+/**
+ * Available role types in the system
+ * 
+ * @description
+ * - Restaurant: Restaurant/establishment
+ * - Client: End customer
+ * - Deliver: Delivery person
+ */
 type Role = 'Restaurant' | 'Client' | 'Deliver';
 
-// Navigation functions
+/**
+ * ============================================================================
+ * NAVIGATION FUNCTIONS
+ * ============================================================================
+ * 
+ * Helper functions for navigation between screens
+ */
+
+/**
+ * Goes back to the previous screen
+ * @param router - Expo router instance
+ */
 function goBack(router: ReturnType<typeof useRouter>) {
   router.back();
 }
 
+/**
+ * Navigates to the main dashboard (after successful login)
+ * @param router - Expo router instance
+ */
 function goToApp(router: ReturnType<typeof useRouter>) {
   router.replace('/dashboard');
 }
 
+/**
+ * Navigates to the registration screen
+ * @param router - Expo router instance
+ */
 function goToSignIn(router: ReturnType<typeof useRouter>) {
   router.push('/signin');
 }
 
+/**
+ * Navigates to the password recovery screen
+ * @param router - Expo router instance
+ */
 function goToForgotPassword(router: ReturnType<typeof useRouter>) {
   router.push('/forgot-password');
 }
 
-// Back Button Component
+/**
+ * ============================================================================
+ * UI COMPONENTS
+ * ============================================================================
+ */
+
+/**
+ * Back button
+ * 
+ * @description
+ * Component that allows going back to the previous screen.
+ * Uses a rotated arrow icon to indicate direction.
+ * 
+ * @param onPress - Function called when button is pressed
+ * @param left - Horizontal position (in pixels)
+ * @param top - Vertical position (in pixels)
+ */
 function BackButton({ 
   onPress, 
   left, 
@@ -60,6 +131,7 @@ function BackButton({
   return (
     <Pressable style={[styles.backButton, { left, top }]} onPress={onPress}>
       <View style={styles.backIconContainer}>
+        {/* Arrow icon rotated 180° to point left */}
         <ArrowRightIcon width={15} height={15} color="#FFD700" style={{ transform: [{ rotate: '180deg' }] }} />
       </View>
       <Text style={styles.backText}>Back</Text>
@@ -67,9 +139,24 @@ function BackButton({
   );
 }
 
+/**
+ * Animated Pressable component
+ * 
+ * @description
+ * Animated version of React Native's Pressable.
+ * Allows applying animations to pressable buttons.
+ */
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 
-// Welcome Text Component
+/**
+ * Welcome text
+ * 
+ * @description
+ * Displays the login screen title and subtitle.
+ * Uses AnimatedCard for animated entrance.
+ * 
+ * @param top - Vertical position (in pixels)
+ */
 function WelcomeText({ top }: { top: number }) {
   return (
     <AnimatedCard style={[styles.welcomeTextContainer, { top }]} delay={0}>
@@ -81,7 +168,22 @@ function WelcomeText({ top }: { top: number }) {
   );
 }
 
-// Role Bar Component
+/**
+ * Role selection bar
+ * 
+ * @description
+ * Component that allows users to select their role in the system:
+ * - Restaurant: For restaurants/establishments
+ * - Client: For end customers
+ * - Deliver: For delivery persons
+ * 
+ * The component shows an animated bar that moves to the selected role.
+ * 
+ * @param selectedRole - Currently selected role
+ * @param onRoleChange - Function called when role is changed
+ * @param width - Screen width (for responsive calculations)
+ * @param top - Vertical position (in pixels)
+ */
 function RoleBar({ 
   selectedRole, 
   onRoleChange, 
@@ -451,7 +553,7 @@ export default function LoginScreen() {
     <View style={styles.container}>
       <View style={styles.bgLayer}>
         <Image
-          source={require('@/assets/images/bg_login.png')}
+          source={require('@/assets/images/bg_login_password.png')}
           style={styles.bgImage}
           contentFit="cover"
         />

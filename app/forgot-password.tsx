@@ -257,7 +257,7 @@ export default function ForgotPasswordScreen() {
   return (
     <View style={styles.container}>
       <Image
-        source={require('@/assets/images/bg_forgot_password.png')}
+        source={require('@/assets/images/bg_login_password.png')}
         style={styles.backgroundImage}
         contentFit="cover"
       />
