@@ -54,23 +54,23 @@
 
 ## 📱 Screenshots
 
-Main app screens:
+Main app screens *(all at same width)*:
 
 | Splash | Welcome 1 | Welcome 2 | Welcome 3 |
 |--------|-----------|-----------|-----------|
-| ![Splash](./assets/screenshots/Splash.png) | ![Welcome 1](./assets/screenshots/Welcome1.png) | ![Welcome 2](./assets/screenshots/Welcome2.png) | ![Welcome 3](./assets/screenshots/Welcome3.png) |
+| <img src="./assets/screenshots/Splash.png" width="200" /> | <img src="./assets/screenshots/Welcome1.png" width="200" /> | <img src="./assets/screenshots/Welcome2.png" width="200" /> | <img src="./assets/screenshots/Welcome3.png" width="200" /> |
 
 | Login | Sign In | Forgot Password |
 |-------|---------|-----------------|
-| ![Login](./assets/screenshots/LoginClient.png) | ![Sign In](./assets/screenshots/SignIn.jpg) | ![Forgot Password](./assets/screenshots/ForgotPassword.jpg) |
+| <img src="./assets/screenshots/LoginClient.png" width="200" /> | <img src="./assets/screenshots/SignIn.jpg" width="200" /> | <img src="./assets/screenshots/ForgotPassword.jpg" width="200" /> |
 
 | Dashboard | Camera | History |
 |------------|--------|---------|
-| ![Dashboard](./assets/screenshots/DashboardClient.png) | ![Camera](./assets/screenshots/Camera.png) | ![History](./assets/screenshots/HistoryFeedFilled.png) |
+| <img src="./assets/screenshots/DashboardClient.png" width="200" /> | <img src="./assets/screenshots/Camera.png" width="200" /> | <img src="./assets/screenshots/HistoryFeedFilled.png" width="200" /> |
 
 | Settings |
 |----------|
-| ![Settings](./assets/screenshots/Settings.jpg) |
+| <img src="./assets/screenshots/Settings.jpg" width="200" /> |
 
 ---
 
