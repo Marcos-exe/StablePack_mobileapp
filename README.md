@@ -20,6 +20,7 @@
 ## 📋 Table of Contents
 
 - [About the Project](#-about-the-project)
+- [Screenshots](#-screenshots)
 - [Features](#-features)
 - [Technologies](#-technologies)
 - [Prerequisites](#-prerequisites)
@@ -48,6 +49,24 @@
 - 📱 **Cross-Platform**: Works on Android, iOS, and Web
 - 🔐 **Secure Authentication**: Login, registration, and password recovery
 - 🌐 **Social Login**: Support for Google, Facebook, and Apple
+
+---
+
+## 📱 Screenshots
+
+Main app screens:
+
+| Splash | Welcome | Login |
+|--------|---------|-------|
+| ![Splash](./screenshots/splash.png) | ![Welcome](./screenshots/welcome.png) | ![Login](./screenshots/login.png) |
+
+| Dashboard | Camera / Analysis | History |
+|-----------|-------------------|---------|
+| ![Dashboard](./screenshots/dashboard.png) | ![Camera](./screenshots/camera.png) | ![History](./screenshots/history.png) |
+
+| Settings | Analysis Result |
+|----------|-----------------|
+| ![Settings](./screenshots/settings.png) | ![Result](./screenshots/analysis-result.png) |
 
 ---
 
