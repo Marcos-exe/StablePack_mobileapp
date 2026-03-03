@@ -56,17 +56,21 @@
 
 Main app screens:
 
-| Splash | Welcome | Login |
-|--------|---------|-------|
-| ![Splash](./screenshots/splash.png) | ![Welcome](./screenshots/welcome.png) | ![Login](./screenshots/login.png) |
+| Splash | Welcome 1 | Welcome 2 | Welcome 3 |
+|--------|-----------|-----------|-----------|
+| ![Splash](./assets/screenshots/Splash.png) | ![Welcome 1](./assets/screenshots/Welcome1.png) | ![Welcome 2](./assets/screenshots/Welcome2.png) | ![Welcome 3](./assets/screenshots/Welcome3.png) |
 
-| Dashboard | Camera / Analysis | History |
-|-----------|-------------------|---------|
-| ![Dashboard](./screenshots/dashboard.png) | ![Camera](./screenshots/camera.png) | ![History](./screenshots/history.png) |
+| Login | Sign In | Forgot Password |
+|-------|---------|-----------------|
+| ![Login](./assets/screenshots/LoginClient.png) | ![Sign In](./assets/screenshots/SignIn.jpg) | ![Forgot Password](./assets/screenshots/ForgotPassword.jpg) |
 
-| Settings | Analysis Result |
-|----------|-----------------|
-| ![Settings](./screenshots/settings.png) | ![Result](./screenshots/analysis-result.png) |
+| Dashboard | Camera | History |
+|------------|--------|---------|
+| ![Dashboard](./assets/screenshots/DashboardClient.png) | ![Camera](./assets/screenshots/Camera.png) | ![History](./assets/screenshots/HistoryFeedFilled.png) |
+
+| Settings |
+|----------|
+| ![Settings](./assets/screenshots/Settings.jpg) |
 
 ---
 
